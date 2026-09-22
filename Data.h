@@ -3,7 +3,7 @@
 //
 
 #pragma once
-//#include <ostream>
+#include <ostream>
 #include <string>
 
 class Data {

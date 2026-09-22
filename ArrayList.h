@@ -7,6 +7,7 @@
 
 template <typename T>
 class ArrayList : public List<T> {
+public:
     ArrayList(): size_(0) {
     }
 
@@ -55,25 +56,4 @@ private:
     static const int CAPACITY = 20;
     T* data_[CAPACITY];
     int size_;
-/*
-// Add from the back and delete on the array
-    void addBack(T item) {
-        if (size >= CAPACITY) {
-            cout << "Array is full" << endl;
-            return;
-        }
-        data[size] = item;
-        size++;
-    }
-    void deleteBack() {
-        if (size == 0) {
-            cout << "Array is empty" << endl;
-            return;
-        }
-        size--;
-    }
-*/
-
-
-
-
+};

@@ -10,7 +10,8 @@ int main() {
     list-> print();
 
     int key = 20;
-    std:: cout << "search(20): " << (list->search(&key)) ? "found" : "Not found" << std::endl;
+    std:: cout << "search(20): "
+                << (list->search(&key) ? "found" : "Not found" ) << std::endl;
     list-> deleteFront();
     list-> print();
 
@@ -21,7 +22,9 @@ int main() {
     roster->print();
 
     Data query (2, "");
-    std:: cout<< "search(id 2): "<< (roster->search(&query)) ? "found" : "Not found" << std::endl;
+    std:: cout << "search(id 2): "
+                << (roster->search(&query) ? "found" : "Not found" )
+                << std::endl;
 
     return 0;
 }

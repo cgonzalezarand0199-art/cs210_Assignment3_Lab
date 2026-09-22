@@ -18,9 +18,9 @@ public:
 
 #include "ArrayList.h"
 #include "LinkedList.h"
-
 template <typename T>
+
 std::unique_ptr<List<T>> makeList() {
-    return std:: make_unique<LinkedList<T>>();
-    //return std:: make_unique<ArrayList<T>>();
+    return std::make_unique<LinkedList<T>>();
+    //return std::make_unique<ArrayList<T>>();
 }
